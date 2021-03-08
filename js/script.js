@@ -40,6 +40,7 @@ var quotes = [
 	new Quote('<img src="imgs/NYC_Miami_Final_Mike_Perry.jpg">', "Mike Perry", ["Poster", "Typography", "Trippy"], "NYC + MIAMI FINAL"),
 	new Quote('<img src="imgs/Run_NYC_Run_Anywhere_COLORED03.jpg">', "Mike Perry", ["Poster", "Typography", "colourful"], "Run NYC Run"),
 	new Quote('<img src="imgs/Mike_Perry_Dreamspace_Poster.jpg">', "Mike Perry", ["Poster", "Trippy", "colourful"], "Dream Space"), 
+	new Quote('<img src="imgs/GriddedGarden_Mike_Perry2017.png">', "Mike Perry", ["Poster", "Trippy", "colourful"], "Gridded Gardens")
 	]
 
 var tagList = []

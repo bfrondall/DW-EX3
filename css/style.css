@@ -8,14 +8,17 @@ html, body{
 }
 
 img{
-	max-width: 100%;
+	max-width: 200%;
 }
 
+.quotes{
+	display: block;
+}
 
 div > div{
 	width: 250px;
 	height: 250px;
-	padding: 100px;
+	padding-bottom: 800px;
 }
 
 .h1{
