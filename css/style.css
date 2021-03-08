@@ -11,15 +11,15 @@ img{
 	max-width: 100%;
 }
 
-.quotes{
-	color: white;
-	display: flex;
-}
 
 div > div{
 	width: 250px;
 	height: 250px;
-	padding: 20px;
+	padding: 100px;
+}
+
+.h1{
+	padding-top: 100px
 }
 
 .active{

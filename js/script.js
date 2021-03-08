@@ -3,11 +3,11 @@
 
 // ]
 
-function Quote(quoteText, author, tags, color) {
-	this.quote = quoteText;
+function Quote(images, author, tags, title) {
+	this.image = images;
 	this.author = author;
 	this.tags = tags;
-	this.color = color;
+	this.title = title;
 	this.display = function() {
 
 		var container = $("<div>")
@@ -17,9 +17,11 @@ function Quote(quoteText, author, tags, color) {
 
 		container.css("background", this.color)
 		container.addClass("quote")
+		container.addClass("h1")
 
 		var quoteString = "";
-		quoteString += "<p>" + this.quote + "</p>";
+		quoteString += "<h1>" + this.title + "</h1>"
+		quoteString += "<p>" + this.image + "</p>";
 		quoteString += "<cite>" + this.author + "</cite>";
 		
 		container.html(quoteString)
@@ -29,8 +31,15 @@ function Quote(quoteText, author, tags, color) {
 
 
 var quotes = [
-	new Quote('"We don\'t make mistakes, just happy little accidents."', "Bob Ross", ["painting", "mistakes"], "#0a3410"),
-	new Quote('"Creativity takes Courage"', "Henry Matisse", ["painting", "creativity"], "lightblue")
+	new Quote('<img src="imgs/Flower_people.png">', "Mike Perry", ["Trippy", "Abstract", "colourful"], "Flower People"),
+	new Quote('<img src="imgs/LyftStaycation_MikePerry.jpg">', "Mike Perry", ["Typography", "colourful", "banner"], "Lyft Station"), 
+	new Quote('<img src="imgs/Space.jpg">', "Mike Perry", ["Trippy", "Abstract", "colourful"], "Space"), 
+	new Quote('<img src="imgs/Floral_Stare_Down18x18.jpg">', "Mike Perry", ["Abstract", "Trippy", "painting"], "Floral Stare"), 
+	new Quote('<img src="imgs/What_Care_Feels_Like.png">', "Mike Perry", ["Typography", "Abstract", "colourful"], "What Care Feels Like"),
+	new Quote('<img src="imgs/Where_Everyone_Knows_Your_Name_Color_IP2.jpg">', "Mike Perry", ["Poster", "Abstract", "colourful"], "Where Everyone Knows Your Name"),
+	new Quote('<img src="imgs/NYC_Miami_Final_Mike_Perry.jpg">', "Mike Perry", ["Poster", "Typography", "Trippy"], "NYC + MIAMI FINAL"),
+	new Quote('<img src="imgs/Run_NYC_Run_Anywhere_COLORED03.jpg">', "Mike Perry", ["Poster", "Typography", "colourful"], "Run NYC Run"),
+	new Quote('<img src="imgs/Mike_Perry_Dreamspace_Poster.jpg">', "Mike Perry", ["Poster", "Trippy", "colourful"], "Dream Space"), 
 	]
 
 var tagList = []
